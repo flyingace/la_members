@@ -1,39 +1,22 @@
-.App {
-  text-align: center;
+.member-profile-page {
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.member-profile-page .main-content {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+    background-color: #eef2f5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.member-profile-page .main-content .form-elements {
+    flex: 1;
+    padding: 20px;
+    background-color: #FFFFFF;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px)
-  }
-  100% {
-    transform: translateY(0px)
-  }
+.member-profile-page .main-content .side-bar {
+    flex-basis: 25%;
+    padding: 20px;
+    background-color: #FCFCFC;
+    border-left: 1px solid #E5E5E5;
 }
