@@ -29,23 +29,27 @@
   <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <script type="application/javascript">
-    window.memberProfile = {
+    window.memberProfileData = {
+      allowChildMemberEmails: false,
       category: 'USER_PROFILE',
       childMemberEmailsFeatureEnabled: false,
       collectChildMobileNumberDuringReg: false,
-      collectMemberMobileNumberDuringReg: false,
-      isAllRequiredFieldsComplete: true,
+      collectMemberMobileNumberDuringReg: true,
+      isAllRequiredFieldsComplete: false,
       isAlternateEmailEnabled: true,
-      isAlternateEmailRequired: true,
-      isHideMemberName: true,
-      isHideMemberProfile: true,
-      isMemberAddressRequired: true,
-      isMemberMobileNumberRequired: true,
+      isAlternateEmailRequired: false,
+      isHideMemberName: false,
+      isHideMemberProfile: false,
+      isMemberAddressRequired: false,
+      isMemberBirthdateRequired: false,
+      isMemberMobileNumberRequired: false,
+      isParentBirthdateRequired: false,
+      minAge: '16',
       minimumChildAge16Enabled: '13',
       siteId: '1',
       siteMode: 'MIXED',
-      targetUrl:
-        `/ajax/console/sites/${window.siteId}/siteOptionsAjaxSubmit`,
+      // targetUrl:
+      //   `/ajax/console/sites/${window.memberProfileData.siteId}/siteOptionsAjaxSubmit`,
     };
   </script>
   <div id="root"></div>
